@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>    
+<body>
+    <div id="header"></div>
+    <div class="left"></div>
+    <div class="stuff">
+      <br>
+      <h1>Resume</h1>
+      <h2>Timothy Thomas</h2>
+      <hr />
+      <br>
+      <p class="head">Interests</p>
+      <ul>
+        <li>Cloud (AWS)</li>
+        <li>Cybersecurity</li>
+        <li>Python</li>
+      </ul>
+    <br>
+      <p class="head">Skills</p>
+      <ul>
+        <li>Web Design with HTML & CSS</li>
+      </ul>
+    <br>
+      <p class="head">Education</p>
+      <ul>
+        <a href="http://www.richmond.edu">
+          <li>University of Richmond</li>
+        </a>
+        <!--Link-->
+        <a href="https://www.vcu.edu/">
+          <li>Virginia Commonwealth University</li>
+        </a>
+        <a href="https://www.vt.edu/">
+            <li>Virginia Tech</li>
+        </a>
+      </ul>
+      <br>
+      <p class="head">Experience</p>
+      <ul>
+        <a href="https://www.boozallen.com">
+            <li>Booz Allen Hamilton</li>
+        </a>
+            <!--<li>Peraton</li>--> 
+      </ul>
+      <br>
+      <p class="head">Extracurriculars</p>
+      <ul>
+        <li>Learning Python</li>
+        <li>Learning AWS</li>
+      </ul>
+      <br>
+      <p class="head">Links</p>
+      <ul>
+        <a href="https://www.linkedin.com/in/timothythomas1">
+            <li>LinkedIn</li>
+        </a>
+        <a href="https://www.github.com/timthomas1">
+            <li>GitHub</li>
+        </a>
+      </ul>
+    </div>
+    <div class="right"></div>
+    <div id="footer">
+      <h3 id="name">Hosted on AWS S3</h3>
+      <p>Total visitors: <span id="visitor_count"></span></p> <!-- Add this line -->
+    </div>
+
+    <!-- JavaScript to update visitor count -->
+    <script>
+      fetch('https://g1xdxspuk8.execute-api.us-east-1.amazonaws.com/cloud_resume_challenge/VisitorCountManager')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('visitor_count').innerText = data.Count;
+      });
+    </script>
+</body>
+</html> 
