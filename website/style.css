@@ -1,90 +1,107 @@
-* {
-    max-width: 700px;
-    margin: auto;
-  }
-  
-  
-  /*body {
-      min-width: 500px;
-  }*/
-  
-  div {
-    class="rectangle"
-    border-radius: 5px;
-  }
-  
-  #header {
-    height: 40px;
-    width: 100%;
-    background-color: #e0eeee;
-    position: relative;
-    z-index: 1;
-  }
-  
-  #title {
-    margin-left: 3%;
-  }
-  
-  #footer {
-    height: 50px;
-    width: 100%;
-    background-color: #e0eeee;
-    clear: both;
-    position: inherit;
-  }
-  
-  .left {
-    height: 1006px;
-    width: 45px;
-    background-color: #e0eeee;
-    float: left;
-    position: inherit;
-  }
-  
-  .right {
-    height: 1006px;
-    width: 45px;
-    background-color: #e0eeee;
-    float: right;
-    position: inherit;
-  }
-  
-  .stuff {
-    display: inline-block;
-    margin-top: 6px;
-    margin-left: 55px;
-    width: 75%;
-    height: 1000px;
-  }
-  
-  p,
-  li {
-    font-family: 'Cormorant Garamond';
-  }
-  
-  .head {
-    font-size: 20px;
-  }
-  
-  #name {
-    font-family: Sacramento;
-    float: right;
-    margin-top: 10px;
-    margin-right: 4%;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  @media only screen and (max-width: 430px) {
-    .left,
-    .right {
-      display: none;
-    }
-    .stuff {
-      width: 100%;
-      margin-left: 10px;
-    }
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.main-content {
+  margin-top: 30px;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+aside {
+  margin-top: 20px;
+}
+
+.linkedin-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077b5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.linkedin-button:hover {
+  background-color: #005f91;
+}
+
+.github-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.github-button:hover {
+  background-color: #005f91;
+}
+
+.youtube-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.youtube-button:hover {
+  background-color: #005f91;
+}
+
+#footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
