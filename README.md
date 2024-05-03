@@ -1,4 +1,4 @@
-This is my repository for the AWS Cloud Resume Challenge.
+This is my repository for the Cloud Resume Challenge - AWS.
 
 The Cloud Resume Challenge, created by Forrest Brazeal, is designed to give aspiring cloud engineers a practical way to showcase their skills by building a serverless resume website using AWS (Amazon Web Services) technologies. 
 
